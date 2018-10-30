@@ -2,7 +2,7 @@ function() {
   function validEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
-  }
+    }
 
   function validateHuman(honeypot) {
     if (honeypot) {  //if hidden form filled up
@@ -10,7 +10,7 @@ function() {
       return true;
     } else {
       console.log("Welcome Human!");
-    }
+      }
   }
 
   // get all data in form and return object
@@ -118,5 +118,4 @@ function() {
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
-  }
 };
